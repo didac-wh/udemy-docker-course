@@ -9,3 +9,8 @@ before_install:
 
 script:
   - docker run -e CI=true didac-wh/docker-react npm run test
+
+branches:
+  only:
+  - master
+  
